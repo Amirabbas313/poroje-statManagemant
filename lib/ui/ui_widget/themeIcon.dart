@@ -14,10 +14,10 @@ class ThemeIcon extends StatelessWidget {
 
   final themeprovider = Provider.of<ThemeProvider>(context);
 
-  var switchicon = Icon(themeprovider.isDarkmode ? CupertinoIcons.moon : CupertinoIcons.sun_max);
+  var switchicon = Icon(themeprovider.isDarkmode ? CupertinoIcons.sun_max : CupertinoIcons.moon);
     return IconButton(
       onPressed: (){
-        themeprovider.toggleTheme;
+        themeprovider.toggleTheme();
       }, 
 
       icon: switchicon,

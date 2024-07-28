@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:statmangmant/providers/ThemeP.dart';
+import 'package:statmangmant/ui/mainWrapper.dart';
 import 'package:statmangmant/ui/ui_widget/themeIcon.dart';
 
 
@@ -27,13 +28,7 @@ class MyApp extends StatelessWidget {
           darkTheme: myTheme.darkTheme,
           debugShowCheckedModeBanner: false,
 
-          home: Scaffold(
-            appBar: AppBar(
-            actions: const [ThemeIcon()],
-            title: const Text('my App'),
-            centerTitle: true,
-        )
-      ),
+          home: const MainWrapper(),
     );
       }
       );
